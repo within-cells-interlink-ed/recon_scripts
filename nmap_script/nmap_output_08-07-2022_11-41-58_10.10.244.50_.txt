@@ -1,0 +1,1 @@
+# Nmap 7.92 scan initiated Sun Aug  7 11:41:58 2022 as: nmap -p- -A -O -v3 -oN nmap_output_%m-%d-%Y_%H-%M-%S_10.10.244.50_.txt 10.10.244.50

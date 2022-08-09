@@ -1,0 +1,44 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-08-05 10:11 IST
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 10:11
+Completed NSE at 10:11, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 10:11
+Completed NSE at 10:11, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 10:11
+Completed NSE at 10:11, 0.00s elapsed
+Initiating Ping Scan at 10:11
+Scanning 10.10.54.40 [4 ports]
+Completed Ping Scan at 10:11, 0.18s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 10:11
+Completed Parallel DNS resolution of 1 host. at 10:11, 0.01s elapsed
+DNS resolution of 1 IPs took 0.33s. Mode: Async [#: 2, OK: 1, NX: 0, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating SYN Stealth Scan at 10:11
+Scanning 10.10.54.40 (10.10.54.40) [65535 ports]
+Discovered open port 21/tcp on 10.10.54.40
+Discovered open port 80/tcp on 10.10.54.40
+SYN Stealth Scan Timing: About 4.92% done; ETC: 10:22 (0:09:59 remaining)
+SYN Stealth Scan Timing: About 9.74% done; ETC: 10:23 (0:10:49 remaining)
+Increasing send delay for 10.10.54.40 from 0 to 5 due to 1862 out of 6205 dropped probes since last increase.
+Increasing send delay for 10.10.54.40 from 5 to 10 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.10.54.40 from 10 to 20 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.10.54.40 from 20 to 40 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.10.54.40 from 40 to 80 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.10.54.40 from 80 to 160 due to 11 out of 12 dropped probes since last increase.
+SYN Stealth Scan Timing: About 10.31% done; ETC: 10:27 (0:14:30 remaining)
+Increasing send delay for 10.10.54.40 from 160 to 320 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.10.54.40 from 320 to 640 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.10.54.40 from 640 to 1000 due to 11 out of 11 dropped probes since last increase.
+SYN Stealth Scan Timing: About 10.38% done; ETC: 10:32 (0:18:43 remaining)
+SYN Stealth Scan Timing: About 10.42% done; ETC: 10:37 (0:22:56 remaining)
+SYN Stealth Scan Timing: About 10.46% done; ETC: 10:41 (0:27:06 remaining)
+SYN Stealth Scan Timing: About 10.51% done; ETC: 10:46 (0:31:14 remaining)
+Stats: 0:04:00 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 10.54% done; ETC: 10:49 (0:33:58 remaining)
+SYN Stealth Scan Timing: About 10.58% done; ETC: 10:54 (0:38:02 remaining)
+SYN Stealth Scan Timing: About 10.63% done; ETC: 10:58 (0:42:03 remaining)
+SYN Stealth Scan Timing: About 10.67% done; ETC: 11:03 (0:46:03 remaining)
+SYN Stealth Scan Timing: About 10.72% done; ETC: 11:07 (0:50:00 remaining)

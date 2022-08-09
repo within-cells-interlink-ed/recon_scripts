@@ -1,0 +1,60 @@
+recon nfs2 thm
+nmap output
+
+open ports: 7 (-p- -A -O -T4)
+	22/tcp 		open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+	111/tcp 	open  rpcbind syn-ack ttl 63 2-4 (RPC #100000)
+	37049/tcp 	open  mountd  syn-ack ttl 63 1-3 (RPC #100005)
+	41947/tcp 	open  mountd  syn-ack ttl 63 1-3 (RPC #100005)
+	54649/tcp 	open  mountd  syn-ack ttl 63 1-3 (RPC #100005)
+	2049/tcp 	open  nfs     syn-ack ttl 63 3-4 (RPC #100003)
+	44451/tcp 	open  nlockmgr syn-ack ttl 63 1-4 (RPC #100021)
+
+port scan output: 22/tcp
+	22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+
+port scan output: 111/tcp
+	111/tcp open  rpcbind syn-ack ttl 63 2-4 (RPC #100000)
+
+	| rpcinfo: 
+	|   program version    port/proto  service
+	|   100000  2,3,4        111/tcp   rpcbind
+	|   100000  2,3,4        111/udp   rpcbind
+	|   100000  3,4          111/tcp6  rpcbind
+	|   100000  3,4          111/udp6  rpcbind
+	|   100003  3           2049/udp   nfs
+	|   100003  3           2049/udp6  nfs
+	|   100003  3,4         2049/tcp   nfs
+	|   100003  3,4         2049/tcp6  nfs
+	|   100005  1,2,3      36679/tcp6  mountd
+	|   100005  1,2,3      37049/tcp   mountd
+	|   100005  1,2,3      47339/udp6  mountd
+	|   100005  1,2,3      53011/udp   mountd
+	|   100021  1,3,4      32957/udp6  nlockmgr
+	|   100021  1,3,4      41321/tcp6  nlockmgr
+	|   100021  1,3,4      44451/tcp   nlockmgr
+	|   100021  1,3,4      55841/udp   nlockmgr
+	|   100227  3           2049/tcp   nfs_acl
+	|   100227  3           2049/tcp6  nfs_acl
+	|   100227  3           2049/udp   nfs_acl
+	|_  100227  3           2049/udp6  nfs_acl
+
+
+port scan output: 37049/tcp
+	37049/tcp open  mountd  syn-ack ttl 63 1-3 (RPC #100005)
+
+
+port scan output: 41947/tcp
+	41947/tcp open  mountd  syn-ack ttl 63 1-3 (RPC #100005)
+
+
+port scan output: 54649/tcp
+	54649/tcp open  mountd  syn-ack ttl 63 1-3 (RPC #100005)
+
+
+port scan output: 2049/tcp
+	2049/tcp open  nfs     syn-ack ttl 63 3-4 (RPC #100003)
+
+
+port scan output: 44451/tcp
+	44451/tcp open  nlockmgr syn-ack ttl 63 1-4 (RPC #100021)

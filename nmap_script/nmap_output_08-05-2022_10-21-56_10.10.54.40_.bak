@@ -1,0 +1,110 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-08-05 10:21 IST
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 10:21
+Completed NSE at 10:21, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 10:21
+Completed NSE at 10:21, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 10:21
+Completed NSE at 10:21, 0.00s elapsed
+Initiating Ping Scan at 10:21
+Scanning 10.10.54.40 [4 ports]
+Completed Ping Scan at 10:21, 0.22s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 10:21
+Completed Parallel DNS resolution of 1 host. at 10:21, 0.00s elapsed
+DNS resolution of 1 IPs took 0.29s. Mode: Async [#: 2, OK: 1, NX: 0, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating SYN Stealth Scan at 10:21
+Scanning 10.10.54.40 (10.10.54.40) [1 port]
+Discovered open port 21/tcp on 10.10.54.40
+Completed SYN Stealth Scan at 10:21, 0.20s elapsed (1 total ports)
+Initiating Service scan at 10:22
+Scanning 1 service on 10.10.54.40 (10.10.54.40)
+Completed Service scan at 10:22, 11.45s elapsed (1 service on 1 host)
+Initiating OS detection (try #1) against 10.10.54.40 (10.10.54.40)
+Retrying OS detection (try #2) against 10.10.54.40 (10.10.54.40)
+Initiating Traceroute at 10:22
+Completed Traceroute at 10:22, 0.16s elapsed
+Initiating Parallel DNS resolution of 1 host. at 10:22
+Completed Parallel DNS resolution of 1 host. at 10:22, 0.06s elapsed
+DNS resolution of 1 IPs took 0.07s. Mode: Async [#: 2, OK: 1, NX: 0, DR: 0, SF: 0, TR: 1, CN: 0]
+NSE: Script scanning 10.10.54.40.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 10:22
+NSE: [ftp-bounce 10.10.54.40:21] PORT response: 500 Illegal PORT command.
+Completed NSE at 10:22, 1.78s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 10:22
+Completed NSE at 10:22, 1.05s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 10:22
+Completed NSE at 10:22, 0.00s elapsed
+Nmap scan report for 10.10.54.40 (10.10.54.40)
+Host is up, received echo-reply ttl 63 (0.14s latency).
+Scanned at 2022-08-05 10:21:59 IST for 20s
+
+PORT   STATE SERVICE REASON         VERSION
+21/tcp open  ftp     syn-ack ttl 63 vsftpd 2.0.8 or later
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 0        0             353 Apr 24  2020 PUBLIC_NOTICE.txt
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.18.26.248
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 3
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.10 - 3.13 (95%), ASUS RT-N56U WAP (Linux 3.4) (95%), Linux 3.16 (95%), Linux 3.1 (93%), Linux 3.2 (93%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (92%), Linux 3.10 (92%), Linux 3.12 (92%), Linux 3.19 (92%), Linux 3.2 - 4.9 (92%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.92%E=4%D=8/5%OT=21%CT=%CU=34108%PV=Y%DS=2%DC=T%G=N%TM=62ECA203%P=x86_64-pc-linux-gnu)
+SEQ(SP=106%GCD=1%ISR=10D%TI=Z%CI=I%II=I%TS=A)
+SEQ(SP=106%GCD=1%ISR=10D%TI=Z%II=I%TS=A)
+OPS(O1=M506ST11NW7%O2=M506ST11NW7%O3=M506NNT11NW7%O4=M506ST11NW7%O5=M506ST11NW7%O6=M506ST11)
+WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)
+ECN(R=Y%DF=Y%T=40%W=6903%O=M506NNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 33.704 days (since Sat Jul  2 17:28:43 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: Welcome
+
+TRACEROUTE (using port 21/tcp)
+HOP RTT       ADDRESS
+1   149.76 ms 10.18.0.1 (10.18.0.1)
+2   149.70 ms 10.10.54.40 (10.10.54.40)
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 10:22
+Completed NSE at 10:22, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 10:22
+Completed NSE at 10:22, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 10:22
+Completed NSE at 10:22, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 20.86 seconds
+           Raw packets sent: 60 (4.252KB) | Rcvd: 42 (3.132KB)

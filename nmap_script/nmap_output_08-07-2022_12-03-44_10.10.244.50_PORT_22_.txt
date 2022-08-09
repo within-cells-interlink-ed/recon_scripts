@@ -1,0 +1,48 @@
+# Nmap 7.92 scan initiated Sun Aug  7 12:03:45 2022 as: nmap -p22 -sV -A -O -v3 -oN nmap_output_%m-%d-%Y_%H-%M-%S_10.10.244.50_PORT_22_.txt 10.10.244.50
+Nmap scan report for 10.10.244.50
+Host is up, received echo-reply ttl 63 (0.15s latency).
+Scanned at 2022-08-07 12:03:46 IST for 11s
+
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 91:df:5c:7c:26:22:6e:90:23:a7:7d:fa:5c:e1:c2:52 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsQBsFkx22xGvnoVM2jdoshYhErSrOah7KuFFxx17bNXpP0ngmmi8eg8cF15/W09dFRZkHpolm+hwczAJg8YtCikckf57z6tuMZIJG97TEFjtevvyw2hB7YjUJXCsQOkGKUkHs8q1QqiTX0jFaM/LQdZm+77MxuaU8XXbcghfHISAyh2++AwD6LIIJvVKk/1vjMHO6GtgoyvVmlVrITZv+5naaAUgfyqoKJr2mfsJDl8MpalE4Fb9aXP2LopBgQ5YetpjFI4kyvxlaZZ86nrvvCc5FZWXM5ezfJT1R8fIaM8+3rY/6ktlVzQ/C3fNqJaT9YolYOYcQuHZ1mJ7rrE0P
+|   256 86:57:f5:2a:f7:86:9c:cf:02:c1:ac:bc:34:90:6b:01 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCdRH8y2bhSww6mxtO3NwyfVfbhPCFZ8RxKhZrmc4LoqyRvJhmISqcY/e9JmkvjeqFx+QLGsadZo3ap9QyVuDAE=
+|   256 81:e3:cc:e7:c9:3c:75:d7:fb:e0:86:a0:01:41:77:81 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBOdFR83uui/AaLq3bUcJ0REIIL0laVVmSMvkeVpGWd1
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Linux 2.6.32 (92%), Linux 2.6.39 - 3.2 (92%), Linux 3.1 - 3.2 (92%), Linux 3.2 - 4.9 (92%), Linux 3.5 (92%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.92%E=4%D=8/7%OT=22%CT=%CU=30722%PV=Y%DS=2%DC=T%G=N%TM=62EF5CD5%P=x86_64-pc-linux-gnu)
+SEQ(SP=104%GCD=1%ISR=10C%TI=Z%CI=Z%II=I%TS=A)
+OPS(O1=M506ST11NW7%O2=M506ST11NW7%O3=M506NNT11NW7%O4=M506ST11NW7%O5=M506ST11NW7%O6=M506ST11)
+WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)
+ECN(R=Y%DF=Y%T=40%W=F507%O=M506NNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 31.427 days (since Thu Jul  7 01:48:42 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 22/tcp)
+HOP RTT       ADDRESS
+1   148.32 ms 10.18.0.1
+2   148.90 ms 10.10.244.50
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug  7 12:03:57 2022 -- 1 IP address (1 host up) scanned in 12.36 seconds

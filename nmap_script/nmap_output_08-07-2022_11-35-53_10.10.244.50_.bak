@@ -1,0 +1,30 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-08-07 11:36 IST
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 11:36
+Completed NSE at 11:36, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 11:36
+Completed NSE at 11:36, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 11:36
+Completed NSE at 11:36, 0.00s elapsed
+Initiating Ping Scan at 11:36
+Scanning 10.10.244.50 [4 ports]
+Completed Ping Scan at 11:36, 3.08s elapsed (1 total hosts)
+Nmap scan report for 10.10.244.50 [host down, received no-response]
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 11:36
+Completed NSE at 11:36, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 11:36
+Completed NSE at 11:36, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 11:36
+Completed NSE at 11:36, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 6.86 seconds
+           Raw packets sent: 8 (304B) | Rcvd: 0 (0B)

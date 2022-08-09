@@ -1,0 +1,1 @@
+# Nmap 7.92 scan initiated Mon Aug  8 16:35:00 2022 as: nmap -p- -A -O -T3 -v3 -oN nmap_output_%m-%d-%Y_%H-%M-%S_192.168.161.196_.txt 192.168.161.196
